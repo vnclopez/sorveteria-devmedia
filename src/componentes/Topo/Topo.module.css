@@ -1,0 +1,52 @@
+.topo {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #F9DB79;
+    position: fixed;
+    top: 0;
+}
+
+.conteudo_topo {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.conteudo_topo nav {
+    padding: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.conteudo_topo a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* --------------- MEDIA QUERIES ------------------- */
+
+@media (max-width: 768px) {
+    .conteudo_topo {
+        flex-direction: column;
+
+    }
+
+    .conteudo_topo nav{
+        width: 100%;
+        justify-content: space-around;
+        border-top: 1px solid gray;
+    }
+}

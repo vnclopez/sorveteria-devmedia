@@ -1,11 +1,12 @@
 import Image from "next/image";
 import logo from "/public/logo.png";
+import estilos from "./Rodape.module.css";
 
 export default function Rodape() {
     return (
-        <footer>
-            <div>
-                <Image src={logo} alt="Logo da Gelateria" />
+        <footer className={estilos.rodape}>
+            <div className={estilos.container_contatos}>
+                <Image src={logo} alt="Logo da Gelateria" className={estilos.logo} />
 
                 <div>
                     <h3>ENDEREÇO</h3>
@@ -29,8 +30,8 @@ export default function Rodape() {
                 </div>
             </div>
 
-            <div>
-                <p>Gelateria. Orgulhosamente desenvolvido por "Vinicius Lucio Lopes"</p>
+            <div className={estilos.container_autoral}>
+                <p>Gelateria. Desenvolvido por Vinicius Lucio Lopes</p>
             </div>
 
         </footer>

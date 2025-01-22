@@ -8,16 +8,17 @@ import sobre from "/public/sobre-image.jpg";
 export default function Home() {
   return (
 
-    <main className={estilos.main}>
-      <section>
+    <main>
+      <section className={estilos.secao_banner}>
         <h1>SORVETE ARTESANAL</h1>
       </section>
 
-      <section>
+      <section className={estilos.secao_sabores}>
         <div>
-          <Image src={sabores} alt="Imagem da seção sabores" />
+          <Image src={sabores} alt="Imagem da seção sabores" className={estilos.imagem} />
         </div>
-        <div>
+
+        <div className={estilos.container_texto}>
           <h2>NOSSOS SABORES</h2>
           <span>Novos e deliciosos!</span>
           <p>
@@ -26,8 +27,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div>
+      <section className={estilos.secao_eventos}>
+        <div className={estilos.container_texto}>
           <h2>NOSSOS EVENTOS</h2>
           <span>Delicias com sorvete!</span>
           <p>
@@ -36,16 +37,16 @@ export default function Home() {
         </div>
 
         <div>
-          <Image src={eventos} alt="Imagem da seção eventos" />
+          <Image src={eventos} alt="Imagem da seção eventos" className={estilos.imagem} />
         </div>
       </section>
 
-      <section>
+      <section className={estilos.secao_sobre}>
         <div>
-          <Image src={sobre} alt="Imagem da seção sobre" />
+          <Image src={sobre} alt="Imagem da seção sobre" className={estilos.imagem} />
         </div>
 
-        <div>
+        <div className={estilos.container_texto}>
           <h2>SOBRE NÓS</h2>
           <span>Alegria em cada casquinha!</span>
           <p>

@@ -1,15 +1,16 @@
 import Image from "next/image";
 import sobre from "/public/sobre-image.jpg";
 import sorveteria from "/public/sorveteria.jpg";
+import estilos from "./sobre.module.css";
 
 export default function Sobre() {
     return (
         <main>
-            <section>
+            <section className={estilos.secao_banner}>
                 <h1>A GELATERIA</h1>
             </section>
 
-            <section>
+            <section className={estilos.container_texto}>
                 <h2>Sobre Nós</h2>
 
                 <span>Nós simplesmente amamos sorvete!</span>
@@ -23,13 +24,13 @@ export default function Sobre() {
                 </p>
             </section>
 
-            <section>
+            <section className={estilos.container_imagens}>
                 <div>
-                    <Image src={sobre} alt="Imagem de amigos" />
+                    <Image src={sobre} alt="Imagem de amigos" className={estilos.imagem} />
                 </div>
 
                 <div>
-                    <Image src={sorveteria} alt="Imagem da sorveteria" />
+                    <Image src={sorveteria} alt="Imagem da sorveteria" className={estilos.imagem} />
                 </div>
             </section>
         </main>
